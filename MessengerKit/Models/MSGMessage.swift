@@ -14,6 +14,10 @@ public class MSGMessage: NSObject{
     /// A unique identifier for the message.
     /// This is used to cache bubble sizes for the messenger.
     public let id: Int
+    public let type: Int
+    public let typeID: Int
+    
+    
     
     /// The body of the message.
     public let body: MSGMessageBody
@@ -24,8 +28,10 @@ public class MSGMessage: NSObject{
     /// The time that the message was sent.
     public let sentAt: Date
     
-    public init(id: Int, body: MSGMessageBody, user: MSGUser, sentAt: Date) {
+    public init(id: Int, type: Int, typeID: Int, body: MSGMessageBody, user: MSGUser, sentAt: Date) {
         self.id = id
+        self.type = type
+        self.typeID = typeID
         self.body = body
         self.user = user
         self.sentAt = sentAt
