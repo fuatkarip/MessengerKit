@@ -25,7 +25,7 @@ class MSGImageCollectionViewCell: MSGMessageCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        imageView.layer.cornerRadius = 18
+        imageView.layer.cornerRadius = 1
         imageView.layer.masksToBounds = true
         imageView.isUserInteractionEnabled = true   
     }
